@@ -108,3 +108,80 @@ main {
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
 }
+
+/* RESPONSIVE MOBILE */
+@media screen and (max-width: 1024px) {
+  /* main */
+  main {
+    width: 375px;
+    background-image: none;
+  }
+  /* slide */
+  .slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    background-image: url("../img/pattern-bg.svg");
+    background-repeat: no-repeat;
+    background-size: 375px 375px;
+    background-position: top;
+  }
+
+  /* description */
+  .description {
+    width: 100%;
+    height: 70%;
+    position: relative;
+    left: 0;
+    margin: 0 auto;
+    background-image: url("../img/pattern-quotes.svg");
+    background-repeat: no-repeat;
+    background-size: 75px 75px;
+    background-position: 50% 10%;
+  }
+
+  .description h2 {
+    width: 85%;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    margin: 0 auto;
+    margin-top: 75px;
+    padding: 0;
+    text-align: center;
+  }
+
+  .name-role {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+    background-image: url("../img/pattern-curve.svg");
+    background-repeat: no-repeat;
+    background-size: 300px 70px;
+    background-position: bottom left;
+  }
+
+  .name-role .role {
+    margin-top: 5px;
+  }
+
+  /* photo */
+  .photo {
+    display: flex;
+    margin: 30px auto;
+    width: 100%;
+  }
+
+  .photo img {
+    height: 300px;
+    margin: 0 auto;
+  }
+
+  /* button-container */
+  #button-container {
+    bottom: 340px;
+  }
+}
